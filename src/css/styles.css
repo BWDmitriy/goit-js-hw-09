@@ -66,6 +66,7 @@ textarea {
   color: #2e2f42;
   width: 360px;
   height: 80px;
+  box-sizing: border-box;
 }
 
 input {
@@ -76,4 +77,5 @@ input {
   color: #2e2f42;
   padding: 8px;
   padding-left: 16px;
+  box-sizing: border-box;
 }

@@ -1,3 +1,5 @@
+import SimpleLightbox from 'simplelightbox';
+import SimpleLightbox from 'simplelightboxcfg';
 const images = [
   {
     preview:

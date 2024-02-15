@@ -70,31 +70,17 @@ const galleryMarkup = images.map(
   <a class="gallery-link" href="${image.original}">
     <img
       class="gallery-image"
+      width="1280"
+      height="100%"
       src="${image.preview}"
       data-source="${image.original}"
       alt="${image.description}"
     />
   </a>
-</li>`
+  </li>`
 );
 
 galleryList.insertAdjacentHTML('beforeend', galleryMarkup.join(''));
 
-galleryList.addEventListener('click', onImageClick);
-
-function onImageClick(e) {
-  e.preventDefault();
-
-  if (e.target.nodeName !== 'IMG') {
-    return;
-  }
-  const instance = basicLightbox.create(`
-		<img width="100%" height="100%" src="${e.target.dataset.source}">
-	`);
-  instance.show();
-  galleryList.addEventListener('keydown', e => {
-    if (e.code === 'Escape') {
-      instance.close();
-    }
-  });
-}
+let gallery = new SimpleLightbox('.gallery a');
+gallery.on('show.simplelightbox', function () {});

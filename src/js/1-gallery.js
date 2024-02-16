@@ -1,4 +1,4 @@
-import SimpleLightbox from 'simplelightboxcfg';
+import SimpleLightbox from 'simplelightbox';
 
 const images = [
   {

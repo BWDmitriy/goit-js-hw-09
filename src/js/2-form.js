@@ -30,7 +30,7 @@ form.addEventListener('submit', function (event) {
     message: message.value.trim(),
   };
 
-  saveFormData(formData);
+  // saveFormData(formData);
   console.log(formData);
   form.reset();
   localStorage.removeItem(localStorageKey);
